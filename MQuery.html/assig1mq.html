@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doctor Template</title>
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Segoe UI', sans-serif;
+}
+body {
+
+/* Banner Section */
+align-items: center;
+justify-content: space-between;
+background-color: #e8f0fe;
+padding: 40px 20px;
+flex-wrap: wrap;
+}
+.skill > div:first-child {
+flex: 1;
+background-color: aqua;
+}
+.skill > div:last-child {
+background-color: aquamarine;
+flex: 1;
+text-align: center;
+}
+.skill h1 {
+font-size: 36px;
+margin-bottom: 10px;
+color: #000;
+}
+.skill p {
+font-size: 18px;
+color: #333;
+}
+.skill img {
+padding-left:500px;
+max-width: 100%;
+height:400px;
+}
+/* Services Section */
+.sh {
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+gap: 20px;
+padding: 40px 20px;
+}
+.sh div {
+background: white;
+padding: 15px;
+text-align: center;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.sh img {
+width: 100%;
+height: auto;
+}
+.sh h3 {
+font-size: 16px;
+margin-top: 10px;
+}
+/* Works Section */
+.main {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+padding: 40px 20px;
+}
+.main div {
+background: white;
+padding: 15px;
+text-align: center;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.main img {
+width: 100%;
+height: auto;
+}
+.main h4 {
+font-size: 15px;
+margin-top: 10px;
+}
+/* Media Queries */
+@media (max-width: 1024px) {
+.skill {
+flex-direction: column;
+text-align: center;
+}
+.sh {
+grid-template-columns: repeat(3, 1fr);
+}
+.main {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+@media (max-width: 600px) {
+.sh {
+grid-template-columns: repeat(2, 1fr);
+}
+.main {
+grid-template-columns: repeat(1, 1fr);
+}
+}
+</style>
+</head>
+<body>
+<!-- Banner Section -->
+<section class="skill">
+<div>
+<h1>Your health, our priority</h1>
+<p><i>Wear the white coat with dignity and pride, it is an honor and privilege to get to serve the public as a physician</i></p>
+</div>
+<div>
+<!-- <img src="https://www.practostatic.com/consumer-home/practo-care/1631634827/dweb_hero_banner.png" alt="Banner"> -->
+ <img src="https://www.veintreatmentclinic.com/wp-content/uploads/2020/09/NJ-team-cutout-2020.png">
+</div>
+</section>
+<!-- Services Section -->
+<section class="sh">
+<div>
+<img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png">
+<h3>InstantConsultation</h3>
+</div>
+<div>
+<img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png">
+<h3>InstantConsultation</h3>
+</div>
+<div>
+<img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png">
+<h3>InstantConsultation</h3>
+</div>
+<div>
+<img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png">
+<h3>InstantConsultation</h3>
+</div>
+<div>
+<img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png">
+<h3>InstantConsultation</h3>
+</div>
+<div>
+<img src="https://www.practostatic.com/consumer-
+home/desktop/images/1597423628/dweb_instant_video_consulation.png">
+<h3>InstantConsultation</h3>
+</div>
+</section>
+<!-- Works Section -->
+<section class="main">
+<div>
+<img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg">
+<h4>Dentist</h4>
+</div>
+<div>
+<img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg">
+<h4>Dentist</h4>
+</div>
+<div>
+<img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg">
+<h4>Dentist</h4>
+</div>
+<div>
+<img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg">
+<h4>Dentist</h4>
+</div>
+</section>
+
+<section class="main">
+<div>
+<img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg">
+<h4>Dentist</h4>
+</div>
+<div>
+<img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg">
+<h4>Dentist</h4>
+</div>
+<div>
+<img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg">
+<h4>Dentist</h4>
+</div>
+<div>
+<img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg">
+<h4>Dentist</h4>
+</div>
+</section>
+</body>
+</html>

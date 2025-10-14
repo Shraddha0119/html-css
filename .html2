@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="background-color:aqua; border: dotted;font-size: 40px;" >wel come to foodyland</h1>
+    <hr>
+    <h2 style="color: rgb(205, 119, 119);"> samosa</h2>
+    <p style="font-size: 25px; color: #000; text-align: justify; " >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consectetur accusantium earum quaerat iusto minima itaque esse, non numquam eius voluptatibus? Quis nobis totam odio saepe sunt iure corrupti ut?</p>
+    <div>
+    <img src="samosa-recipe.jpg" style="width: 300px; height:300px;">
+    <img src="">
+    
+</body>
+</html>
