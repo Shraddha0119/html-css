@@ -1,41 +1,90 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login page</title>
-    <style>
-        #login{
-            width: 250px;
-            height: 280px;
-            padding: 20px;
-            /* border: 2px solid; */
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            margin: auto;
-            margin-top: 80px;
-            text-align: center;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Login</title>
 
-        }
-        input,label{
-            font-size: large;
-        }
-     
-    h1{
-        text-align: center;
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
-        
 
-    </style>
+    body {
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+    }
+
+    .login-box {
+      width: 320px;
+      padding: 30px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .login-box h1 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    .login-box label {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 18px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .login-box input:focus {
+      border-color: #667eea;
+      box-shadow: 0 0 5px rgba(102, 126, 234, 0.6);
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-box button:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+  </style>
 </head>
 <body>
-    <h1>Login Page</h1>
-    <form id="login">
-        <label>Enter Your Name</label><br>
-        <input type="text" id="username" placeholder="username">
-        <br><br>
-       <label>Enter Password</label>  
-       <input type="text" id="password" placeholder="password">
-       <br><br>
-       <input value="login" type="submit">
-    </form>
+
+  <form class="login-box">
+    <h1>Login</h1>
+
+    <label>Username</label>
+    <input type="text" placeholder="Enter username" />
+
+    <label>Password</label>
+    <input type="password" placeholder="Enter password" />
+
+    <button type="submit">Login</button>
+  </form>
+
 </body>
 </html>
