@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chefsy UI</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #f7f7f7;
+  color: #222;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: white;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* HERO */
+.hero {
+  height: 400px;
+  background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* CATEGORIES */
+.categories {
+  padding: 50px 60px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  height: 120px;
+  background: #ddd;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* PRODUCTS */
+.products {
+  padding: 50px 60px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.product {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product button {
+  margin-top: 10px;
+  padding: 8px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">🍳 Chefsy</div>
+  <nav>
+    <a href="#">About</a>
+    <a href="#">FAQ</a>
+  </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Smart Kitchen<br>Delicious Results.</h1>
+    <p>Discover the perfect blend of style and functionality.</p>
+    <button>Shop Now →</button>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories">
+  <h2>Categories</h2>
+  <div class="category-grid">
+    <div class="card">Frying Pans</div>
+    <div class="card">Mixing Bowls</div>
+    <div class="card">Spice Jars</div>
+    <div class="card">Serving Trays</div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products">
+  <h2>New Arrivals</h2>
+  <div class="product-grid">
+
+    <div class="product">
+      <img src="https://via.placeholder.com/150">
+      <h4>Kitchen Tools Set</h4>
+      <p>$199</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/150">
+      <h4>Knife Set</h4>
+      <p>$299</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/150">
+      <h4>Grater</h4>
+      <p>$99</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/150">
+      <h4>Garlic Press</h4>
+      <p>$49</p>
+      <button>Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
